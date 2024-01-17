@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+
+    <record id="action_members" model="ir.actions.act_window">
+      <field name="name">ASSL Members</field>
+      <field name="res_model">assl.member</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--
+    <record id="action_payment" model="ir.actions.act_window">
+        <field name="name">Payment</field>
+        <field name="res_model">assl.payment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- Menu principal "ASSL" -->
+    <menuitem id="menu_assl" name="ASSL" sequence="10" />
+
+    <!-- Sous-menu "Members" -->
+    <menuitem id="menu_members" name="ASSL Members" parent="menu_assl" action="action_members" />
+    <!-- Sous-menu "Payments"
+    <menuitem id="menu_payments" name="ASSL Payments" parent="menu_assl" action="action_payment" />
+    -->
+
+
+  </data>
+</odoo>
